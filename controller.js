@@ -15,7 +15,7 @@ const lookupDNS = (url) => {
 };
 
 const validateUrl = async (url) => {
-	const re = new RegExp(`^https?:\/\/www.*`);
+	const re = new RegExp(`^https?:\/\/.*`);
 	if (!url.match(re)) {
 		return false;
 	}
