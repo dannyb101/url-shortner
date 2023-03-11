@@ -40,7 +40,7 @@ const createShortUrl = async (req, res, next) => {
 	} catch (error) {
 		next(error);
 	}
-	res.json({ url: site.url, index: site.index });
+	res.json({ original_url: site.url, short_url: site.index });
 };
 
 const getShortUrl = async (req, res, next) => {
